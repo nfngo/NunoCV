@@ -1,0 +1,373 @@
+﻿body {
+    font-family: 'Maven Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+#welcome {
+    text-align: center;
+    background-color: #1a1a1a;
+    background-image: url(https://images4.alphacoders.com/477/47766.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-container {
+    min-height:680px;
+    align-items: center;
+    display: flex;
+}
+
+.custom-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: -4px;
+    border: 3px solid white;
+    height: 100%;
+    margin-left: 50px !important;
+    background: -webkit-linear-gradient(left, #ffffff, #155210);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 767px) {
+    .custom-brand {
+        margin: 0 auto !important;
+    }
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: transparent !important;
+    border-bottom: 2px solid white;
+}
+
+.custom-brand:hover {
+    background: -webkit-linear-gradient(right, #ffffff, #155210);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titleh1 {
+    color: black;
+    font-weight:bolder;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.mainTitle {
+    color: white;
+    font-size: 50px;
+}
+
+.phraseh4 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.shadows {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hrbar {
+    border-color: #155210;
+    border-width: 4px;
+    width: 40px;
+}
+
+.profile-text {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.profile-title {
+    text-align: right;
+}
+
+.profile-name {
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 0;
+    text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.6);
+}
+
+.profile-job {
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    color: #155210;
+    margin-bottom: 15px;
+}
+
+.no-bullets {
+    list-style-type: none;
+    letter-spacing: 3px;
+    padding: 0;
+    margin: 0;
+}
+
+.no-bullets > li {
+    margin: 10px 0;
+}
+
+.no-bullets > li > i {
+    color: #155210;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px
+}
+
+.skills-title {
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-text {
+        text-align: center !important;
+        margin-top: 30px;
+    }
+    .profile-title {
+        text-align: center;
+    }
+    .no-bullets {
+        text-align: center;
+    }
+    .skills-title {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+
+.chart {
+    height: 20px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.chart-bar {
+    float: left;
+    height: 100%;
+    color: white;
+    background-color: #155210;
+    box-sizing: border-box;
+}
+
+.curriculumBackground {
+    margin: 30px 0;
+    padding: 30px 0;
+    background-color: #e5e5e5;
+}
+
+.badgeContainer {
+    border-right: solid #155210;
+    height: 240px;
+    position: relative;
+}
+
+.badgeCircle {
+    color: #155210;
+    position: absolute;
+    right: -25px;
+}
+
+.badgeYear {
+    color: white;
+    position:
+    absolute;
+    font-size: 14px;
+    top: 20px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.content {
+    margin: 50px 0;
+}
+
+.contentTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.portfolioBackground {
+    margin: 30px 0 0 0;
+    padding: 30px 0;
+    background-color: #222222;
+}
+
+.projectGrid {
+    padding: 30px 0;
+    background-color: #222222;
+}
+
+.project {
+    height: 300px;
+    background-color: #222222;
+    padding: 0;
+}
+
+.projectImg {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.projectText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 70px auto;
+    width: 100%;
+    height: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.project:hover .projectText {
+    border-top: solid #222222;
+    border-bottom: solid #222222;
+    display: block;
+    height: 60%;
+}
+
+.projectButton {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+a.projectButton:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.projectButton:link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.projectButton:hover {
+    background-color: white;
+    color: #155210;
+    font-weight: bolder;
+}
+
+.hireMeBackground {
+    margin: 0;
+    padding: 60px 0;
+    background-color: #e5e5e5;
+}
+
+.btn-hire, .btn-hire:visited {
+    width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #155210;
+    color: white;
+    display: block;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-hire:hover {
+    background-color: white;
+    outline: 1px solid #155210;
+    color: #155210;
+    font-weight: bolder;
+}
+
+.contactForm {
+    margin-top: 30px;
+}
+
+input[type=text], select {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 60%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #155210;
+    color: white;
+    display: block;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    outline: 1px solid #155210;
+    color: #155210;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #222222;
+    height: 100px;
+}
+
+footer .list-inline {
+    margin: 0;
+    padding: 0;
+}
+
+footer .list-inline li > a{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: transparent;
+}
+
+.footer-text {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
